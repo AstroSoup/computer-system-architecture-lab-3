@@ -7,7 +7,6 @@ out_addr:        .word  0x84
 tmp:             .word  0
 
     .text
-
 _start:
     load         in_addr                     ; загружаю адрес входной ячейки
     load_acc                                 ; загружаю в аккумулятор данные из входной ячейки
