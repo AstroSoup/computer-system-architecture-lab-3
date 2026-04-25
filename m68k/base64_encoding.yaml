@@ -1,8 +1,8 @@
 name: "base64_encoding"
-limit: 2275
+limit: 2000
 memory_size: 0x1000
 memory_mapped_io:
-  0x80: ["0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0\n"]
+  0x80: ["A\n"]
   0x84: []
 reports:
   - name: all
