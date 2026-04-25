@@ -1,0 +1,22 @@
+name: "base64_encoding"
+limit: 2275
+memory_size: 0x1000
+memory_mapped_io:
+  0x80: ["0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0\n"]
+  0x84: []
+reports:
+  - name: all
+    slice: all
+    view: |
+      {pc}: {instruction} {pc:label}
+      input_sym:  {io:128:sym}
+      D0: {D0:hex}
+      mem: {memory:0x0:0x40}
+
+
+  - name: Result
+    slice: last
+    view: |
+      input_sym:  {io:128:sym}
+      output_sym: {io:132:sym}
+      mem: {memory:0x0:0x48}
