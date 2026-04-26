@@ -1,0 +1,12 @@
+name: "sum_word_cstream"
+limit: 2000
+memory_size: 0x1000
+memory_mapped_io:
+  0x80: [-1, -1, 0]
+  0x84: []
+reports:
+  - name: Result
+    slice: last
+    view: |
+      input_sym:  {io:128:dec}
+      output_sym: {io:132:hex}
