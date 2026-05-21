@@ -5,15 +5,6 @@ memory_mapped_io:
   0x80: ["A\n"]
   0x84: []
 reports:
-  - name: all
-    slice: all
-    view: |
-      {pc}: {instruction} {pc:label}
-      input_sym:  {io:128:sym}
-      D0: {D0:hex}
-      mem: {memory:0x0:0x40}
-
-
   - name: Result
     slice: last
     view: |
